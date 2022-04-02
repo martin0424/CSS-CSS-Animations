@@ -7,6 +7,7 @@
   width: 20%;
   margin: auto;
   display: inline-block;
+  transform: translateX(10em);
 }
 
 /****************************************
@@ -18,11 +19,12 @@
   width: 200px;
   height: 200px;
   filter: grayscale(100%);
-
+  transition: filter 1s, transform 4s;
 }
 
 .transition-demo img:hover {
-
+  filter: grayscale(0%);
+  transform: rotate(360deg);
 }
 
 /****************************************
